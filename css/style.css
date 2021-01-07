@@ -427,13 +427,7 @@ section.white-bg {
   background: #FFF;
 }
 section.padding {
-  padding: 80px 50px;
-}
-section.padding-50 {
-  padding: 50px;
-}
-section.padding-60 {
-  padding: 60px 50px;
+  padding: 65px 50px;
 }
 
 .section-title {
@@ -587,6 +581,12 @@ section.padding-60 {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border: solid 1px #EFEFEF;
+  border-radius: 10px;
+}
+.portfolio-item .withtext {
+  padding: 30px 20px;
+  text-align: center;
 }
 .portfolio-item .thumb {
   overflow: hidden;
@@ -641,6 +641,24 @@ section.padding-60 {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.portfolio-item .textdownload {
+  color: #FF5959;
+  background: #FFF;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 16px;
+  left: 25px;
+  bottom: 25px;
+  opacity: 0;
+  line-height: 32px;
+  text-align: center;
+  height: 30px;
+  width: 77px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .portfolio-item .mask {
   background: #FF5959;
   position: absolute;
@@ -673,6 +691,9 @@ section.padding-60 {
   transform: translateY(0);
 }
 .portfolio-item:hover .plus-icon {
+  opacity: 1;
+}
+.portfolio-item:hover .textdownload {
   opacity: 1;
 }
 
