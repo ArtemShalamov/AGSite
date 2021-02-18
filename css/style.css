@@ -1733,3 +1733,16 @@ section.padding-60 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+a.button {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #4A63E7; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 10px;
+  margin-right: 15px;
+} 
+a.button:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.button:active { background: rgb(152,15,0); } /* при нажатии */
